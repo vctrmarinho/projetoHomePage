@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color: white;
+    --bckgd-img: url(./src/background.jpg);
+    --stroke-color: gray;
+    --hover-color: white;
+    --stroke-hover: white;
+    --switch-color: white;
+}
+
+.light{
+    --text-color: black;
+    --bckgd-img: url(./src/white-background.jpg);
+    --stroke-color: black;
+    --hover-color: white;
+    --stroke-hover: white;
+    --switch-color: black;
+}
+
+
+body{
+    background: var(--bckgd-img) no-repeat top center;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+body * {
+    color: var(--text-color);
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+#container{
+    margin: auto;
+    padding: 30px;
+}
+
+#foto{
+    padding: 50px;
+    text-align: center;
+}
+
+#foto img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+#switch{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#switch button{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: solid black 2px;
+    
+    position: absolute;
+    top: -8%;
+    left: 0;
+    z-index: 1;
+    /* transform: translate(0%); */
+}
+
+.light #switch button{
+    right: 0;
+    left: initial;
+    background-color: var(--switch-color);
+    border: solid gray 2px;
+}
+
+#switch span{
+    display: block;
+    width: 50px;
+    height: 16px;
+    border-radius: 20px;
+    background-color: var(--switch-color);
+}
+
+
+#links{
+    padding: 0px 30px 30px 30px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#links li{
+    list-style: none; 
+    width: 300px;
+    margin: auto;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+ul li a{
+    display: flex;    
+    justify-content: center;
+    padding: 15px 30px;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    border: solid var(--stroke-color) 3px;
+} 
+
+ion-icon{
+    display: inline-flex;
+    color: black;
+    padding-right: 12px;
+}
+
+ul li a:hover{
+    background-color: var(--hover-color);
+    border: solid var(--stroke-hover) 3px;
+}
+
+footer{
+    text-align: center;
+}

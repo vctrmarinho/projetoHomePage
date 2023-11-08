@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--Importação de Fontes Tilt Neon-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Incial</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="container">
+            
+            <div id="foto">
+                <img src="./src/dark-emoji.jpg"/>
+                <p>Acessos Rapidos</p>
+            </div>
+
+            <div id="switch" onclick="changeMode()">
+                <button></button>
+                <span></span>
+            </div>
+
+            <div id="links">
+                <ul>
+                    <li>
+                        <a href="https://web.whatsapp.com/" target="_blank">
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                            Whatsapp
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://www.youtube.com/">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                            YouTube
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://www.linkedin.com/feed/">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            LinkedIn
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://chat.openai.com/" target="_blank">
+                            <ion-icon name="aperture-outline"></ion-icon>
+                            Chat GPT
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>Essa página é uma adaptação do projeto "DevLinks" da Rocketseat</footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script src="./script.js"></script>
+
+    </body>
+
+</html>
