@@ -29,7 +29,7 @@ body{
     background: var(--bckgd-img) no-repeat top center;
     background-repeat: no-repeat;
     background-position: top center;
-    
+    height: 100vh;
 }
 
 body * {
@@ -78,7 +78,6 @@ body * {
     top: -12%;
     left: 0;
     z-index: 1;
-    /* transform: translate(0%); */
 }
 
 .light #switch button{
